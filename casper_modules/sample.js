@@ -13,7 +13,13 @@ var deviceInfoList = [{
 
 var checkList = [{
     selector : 'title',
-    fn : getTitle
+    fn : function () {
+		var titleEl = document.querySelectorAll('title');
+		if(titleEl.length > 0) {
+			return titleEl[0].text;
+		}
+		return '';
+	}
 }];
 
 var casper = require('casper').create({
@@ -28,14 +34,6 @@ var casper = require('casper').create({
 	result = [];
 
 casper.options.verbose = casper.cli.get('verbose') || false;
-
-function getTitle () {
-	var titleEl = document.querySelectorAll('title');
-	if(titleEl.length > 0) {
-		return titleEl[0].text;
-	}
-	return '';
-}
 
 casper.start();
 
