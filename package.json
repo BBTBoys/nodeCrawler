@@ -1,0 +1,23 @@
+{
+    "name": "nodeCrawler",
+    "description": "web page crawler, created by nodejs, phantomjs, casperjs",
+    "version": "0.1.0",
+    "author": {
+        "name" : "Kim Du-hyeong",
+        "email" : "dduskim@gmail.com"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+    },
+    "keywords" : [
+        "crawler"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:BBTBoys/nodeCrawler.git"
+    },
+    "engines": { "node": ">= 0.8" },
+    "scripts": {
+    }
+}
